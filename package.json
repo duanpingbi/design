@@ -1,9 +1,11 @@
 {
   "private": true,
   "name": "design",
+  "homepage": "https://duanpingbi.github.io/design",
   "scripts": {
     "start": "dumi dev",
     "build": "dumi build",
+    "docs:deploy": "gh-pages -d dist",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\""
   },
   "main": "dist/index.js",
@@ -23,6 +25,7 @@
   "devDependencies": {
     "@umijs/plugin-sass": "^1.1.1",
     "dumi": "^1.1.33",
+    "gh-pages": "^3.2.3",
     "lint-staged": "^10.0.7",
     "node-sass": "^4.0.0",
     "prettier": "^2.2.1",

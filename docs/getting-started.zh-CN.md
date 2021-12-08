@@ -7,7 +7,13 @@ nav:
 # 快速上手
 
 安装组件库
-npm i design
+
+```bash
+$ npm i design
+```
 
 使用组件库
-import { } from 'design';
+
+```js
+import { Button } from 'design';
+```

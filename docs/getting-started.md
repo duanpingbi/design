@@ -6,4 +6,12 @@ nav:
 
 # Getting Started
 
-Balabala...
+```bash
+$ npm i design
+```
+
+使用组件库
+
+```js
+import { Button } from 'design';
+```

@@ -1,6 +1,6 @@
 ---
 nav:
-  title: Button
+  title: Components
   path: /components
 ---
 
