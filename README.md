@@ -1,4 +1,4 @@
-# dumi app
+# Design
 
 ## Getting Started
 
