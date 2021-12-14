@@ -1,0 +1,39 @@
+@import '../style/common/var';
+
+.ds-group {
+  &-horizontal {
+    display: flex;
+    .ds-btn {
+      margin: 0;
+      border-radius: 0;
+
+      &:first-of-type {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+
+      &:last-of-type {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+  }
+
+  &-vertical {
+    .ds-btn {
+      display: block;
+      margin: 0;
+      border-radius: 0;
+
+      &:first-of-type {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+      }
+
+      &:last-of-type {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+  }
+}

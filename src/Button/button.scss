@@ -37,7 +37,6 @@
     font-size: 1em;
     margin: 1em;
     @include btn-size('medium');
-    // letter-spacing: .2em;
     border-radius: 3px;
     cursor: pointer;
     transition: all .4s ease 0;
@@ -46,31 +45,25 @@
         outline: none;
     }  
 }
-.default {
-    @extend .ds-btn;
+.ds-default {
     @extend .shadow;
     @include btn-bg($defalut,$defalut,white);
 }
-.primary {
-    @extend .ds-btn;
+.ds-primary {
     @extend .shadow;
     @include btn-bg($primary,$primary,white);
 }
-.danger {
-    @extend .ds-btn;
+.ds-danger {
     @extend .shadow;
     @include btn-bg($danger, $danger, white);
 }
-.default-outline {
-    @extend .ds-btn;
+.ds-default-outline {
     @include btn-bg(white,$defalut,$defalut);
 }
-.primary-outline {
-    @extend .ds-btn;
+.ds-primary-outline {
     @include btn-bg(white,$primary,$primary);
 }
-.danger-outline {
-    @extend .ds-btn;
+.ds-danger-outline {
     @include btn-bg(white,$danger,$danger);
 }
 .small {

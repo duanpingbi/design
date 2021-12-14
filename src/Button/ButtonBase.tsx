@@ -1,11 +1,20 @@
-import React from 'react';
+import * as React from 'react';
 import './button.scss';
+
+interface IProps {
+  children: React.ReactChildren;
+  type: string;
+  className: string;
+  component: string;
+  href: string;
+  onClick: React.MouseEventHandler;
+}
 /* 
 * @ButtonBase 
 基础组件，主要用于处理buton按钮的公共的一些时间处理onClick、onBlur事件的处理 
 包含样式信息越少越好
 */
-const ButtonBase = React.forwardRef(function ButtonBase(props, ref) {
+const ButtonBase = React.forwardRef(function ButtonBase(props: IProps, ref) {
   const {
     children,
     type,
@@ -13,7 +22,6 @@ const ButtonBase = React.forwardRef(function ButtonBase(props, ref) {
     component = 'button',
     ...otherProps
   } = props;
-  // const buttonRef = React.useRef(null);
   let ComponentProp = component;
   if (ComponentProp === 'button' && otherProps.href) {
     ComponentProp = 'a';
