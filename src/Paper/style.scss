@@ -1,0 +1,171 @@
+$shadowKeyUmbraOpacity: 0.2;
+$shadowKeyPenmbraOpacity: 0.14;
+$hadowAmbientShadowOpacity: 0.12;
+
+@mixin paperShadow(
+  $s1,
+  $s2,
+  $s3,
+  $s4,
+  $s5,
+  $s6,
+  $s7,
+  $s8,
+  $s9,
+  $s10,
+  $s11,
+  $s12
+) {
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, $shadowKeyUmbraOpacity) $s1 $s2 $s3 $s4,
+    rgba(0, 0, 0, $shadowKeyPenmbraOpacity) $s5 $s6 $s7 $s8,
+    rgba(0, 0, 0, $hadowAmbientShadowOpacity) $s9 $s10 $s11 $s12;
+}
+
+.ds {
+  &-paper1 {
+    @include paperShadow(
+      0px,
+      2px,
+      1px,
+      -1px,
+      0px,
+      1px,
+      1px,
+      0px,
+      0px,
+      1px,
+      3px,
+      0px
+    );
+  }
+  &-paper2 {
+    @include paperShadow(
+      0px,
+      3px,
+      1px,
+      -2px,
+      0px,
+      2px,
+      2px,
+      0px,
+      0px,
+      1px,
+      5px,
+      0px
+    );
+  }
+  &-paper3 {
+    @include paperShadow(
+      0px,
+      3px,
+      3px,
+      -2px,
+      0px,
+      3px,
+      4px,
+      0px,
+      0px,
+      1px,
+      8px,
+      0px
+    );
+  }
+  &-paper4 {
+    @include paperShadow(
+      0px,
+      2px,
+      4px,
+      -1px,
+      0px,
+      3px,
+      4px,
+      0px,
+      0px,
+      1px,
+      8px,
+      0px
+    );
+  }
+  &-paper6 {
+    @include paperShadow(
+      0px,
+      3px,
+      5px,
+      -1px,
+      0px,
+      5px,
+      8px,
+      0px,
+      0px,
+      1px,
+      14px,
+      0px
+    );
+  }
+  &-paper8 {
+    @include paperShadow(
+      0px,
+      3px,
+      5px,
+      -1px,
+      0px,
+      6px,
+      10px,
+      0px,
+      0px,
+      1px,
+      18px,
+      0px
+    );
+  }
+  &-paper12 {
+    @include paperShadow(
+      0px,
+      7px,
+      8px,
+      -4px,
+      0px,
+      12px,
+      17px,
+      2px,
+      0px,
+      5px,
+      22px,
+      4px
+    );
+  }
+  &-paper16 {
+    @include paperShadow(
+      0px,
+      8px,
+      10px,
+      -5px,
+      0px,
+      16px,
+      24px,
+      2px,
+      0px,
+      6px,
+      30px,
+      5px
+    );
+  }
+  &-paper16 {
+    @include paperShadow(
+      0px,
+      11px,
+      15px,
+      -7px,
+      0px,
+      24px,
+      38px,
+      3px,
+      0px,
+      9px,
+      46px,
+      8px
+    );
+  }
+}

@@ -1,10 +1,10 @@
 ---
 nav:
-  title: Components
+  title: Button
   path: /components
 ---
 
-## Button
+## Button 组件
 
 ### 基本用法：
 
